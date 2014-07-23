@@ -28,12 +28,12 @@ If your project needs to access location services, it'll also need the following
 The ```MapView``` class is the key component of our library. It behaves like any other ```ViewGroup``` and its behavior can be changed statically with an [XML layout](http://developer.android.com/guide/topics/ui/declaring-layout.html) file, or programmatically during runtime.
 
 #### XML layout
-To add the ```MapView``` as a layout element, add the following to your xml file:
-1. In the root element of the XML file, include the Mapbox namespace declaration
+To add the ```MapView``` as a layout element, first include the Mapbox namespace declaration in the root element of your XML layout file:
 ```xml
 xmlns:mapbox="http://schemas.android.com/apk/lib/com.mapbox.mapboxsdk"
 ```
-2. Add the MapView
+
+Then add the MapView:
 ```xml
 <com.mapbox.mapboxsdk.views.MapView
 android:id="@+id/mapview"
